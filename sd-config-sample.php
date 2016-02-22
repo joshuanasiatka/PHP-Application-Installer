@@ -63,7 +63,7 @@ $table_prefix  = 'sd_';
  * For developers: Service Desk debugging mode.
  *
  * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * It is strongly recommended that plugin and theme developers use SD_DEBUG
  * in their development environments.
  *
  * For information on other constants that can be used for debugging,
