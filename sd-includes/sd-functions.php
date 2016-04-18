@@ -17,7 +17,7 @@ class Configure {
 			require_once( ABSPATH . 'admin/step2.php' );
 		} elseif ($step == 3) {
 			require_once( ABSPATH . 'admin/step3.php' );
-		} 
+		}
 	}
 
 	function GetSelfScript() {
@@ -43,16 +43,16 @@ class Configure {
 	}
 
 	function buildConfig() {
-		$config = file_get_contents( ABSPATH . 'sd-config-sample.php');
-		$newfile = str_replace('database_name_here', DB_NAME, $config);
-		$newfile = str_replace('username_here', DB_USER, $newfile);
-		$newfile = str_replace('password_here', DB_PASS, $newfile);
-		$newfile = str_replace('localhost', DB_HOST, $newfile);
+		$config = file_get_contents( ABSPATH . 'config-sample.php');
+		$newfile = str_replace('DB_DBNAME', DB_NAME, $config);
+		$newfile = str_replace('DB_USERNAME', DB_USER, $newfile);
+		$newfile = str_replace('DB_PASSWORD', DB_PASS, $newfile);
+		$newfile = str_replace('DB_HOSTNAME', DB_HOST, $newfile);
 		$authkey = md5(time());
 		$randkey = md5(time()+50);
 		$newfile = str_replace('AUTHKEY_PHRASE', $authkey, $newfile);
 		$newfile = str_replace('RANDKEY_PHRASE', $randkey, $newfile);
-		file_put_contents( ABSPATH . 'sd-config.php', $newfile);
+		file_put_contents( SDCUST . 'config.php', $newfile);
 		printf("<h3>Configuration Installed!</h3>
 				<p>You have successfully setup Bitcraft Service Desk.</p><br>
 				<p><a href='/'><button class='btn btn-primary btn-md'>Proceed</button></a></p>");

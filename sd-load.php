@@ -18,10 +18,10 @@ define( 'ABSPATH', dirname(__FILE__) . '/' );
 define( 'SDCUST', ABSPATH . 'custom/' );
 
 /** Check for config file */
-if ( file_exists( ABSPATH . 'sd-config.php') ) {
+if ( file_exists( SDCUST . 'config.php') ) {
 
 	/** The config file resides in ABSPATH */
-	require_once( ABSPATH . 'sd-config.php' );
+	require_once( SDCUST. 'config.php' );
 	require_once( ABSPATH . 'app.php' );
 
 } else {

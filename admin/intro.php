@@ -14,14 +14,13 @@
     <!-- FONTAWESOME STYLE CSS -->
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
     <!-- CUSTOM STYLE CSS -->
-    <link href="/assets/css/style.css" rel="stylesheet" />    
+    <link href="/assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
 <body>
     <?php 
-        define( 'ABSPATH', dirname( dirname( __FILE__ ) ) . '/' );
         require_once ( ABSPATH . 'sd-includes/sd-functions.php' );
         $conf = new Configure();
     ?>
@@ -41,12 +40,12 @@
                                 <p>Thank you for choosing Bitcraft Service Desk. We appreciate your consideration to have us be your provider as your IT Service Management Application. We put our heart and soul into making this be the best that it can by testing several other ticketing softwares and making one that takes all of the good features of them into something better. </p><p>This was originally just a class project but we took it several steps further to bring you <strong>Bitcraft Service Desk</strong></p>
                                 <p><a href="?step=1"><button class="btn btn-primary">Let's get started</button></a></p>
                             </div>
-                           
+
                         </div>
                         <p class="copyright"><br />powered by <a href='http://itsm.bitcraftlabs.net' target="_blank">Bitcraft Service Desk</a></p>
                     </div>
-                
-                
+
+
         </div>
     </div>
 
@@ -56,6 +55,6 @@
     <script src="/assets/plugins/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS  -->
     <script src="/assets/plugins/bootstrap.js"></script>
-   
+
 </body>
 </html>
